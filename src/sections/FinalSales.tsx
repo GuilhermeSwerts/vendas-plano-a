@@ -9,12 +9,12 @@ export const FinalSales = () => {
     ];
 
     return (
-        <section className="py-24 px-6 bg-background-dark relative overflow-hidden">
+        <section id="oferta" className="py-24 px-6 bg-background-dark relative overflow-hidden">
             {/* Decorative Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[150px] -z-10" />
 
             <div className="max-w-6xl mx-auto space-y-12">
-                <h2 className="text-3xl md:text-4xl font-black text-center uppercase italic tracking-tighter text-text-soft">
+                <h2 className="text-3xl md:text-4xl font-bold text-center uppercase italic tracking-tighter text-text-soft">
                     Aproveite esta oferta exclusiva hoje e garanta:
                 </h2>
 
@@ -22,20 +22,20 @@ export const FinalSales = () => {
                     {/* Left Side: Offer */}
                     <div className="p-12 md:p-16 bg-background-navy/50 flex flex-col justify-center space-y-8 relative">
                         <div className="space-y-2">
-                            <h3 className="text-2xl font-bold text-accent uppercase tracking-widest">Kompleto Start</h3>
+                            <h3 className="text-2xl font-semibold text-accent uppercase tracking-widest">Kompleto Start</h3>
                         </div>
 
                         <div className="space-y-1">
                             <div className="flex items-baseline gap-2">
-                                <span className="text-3xl font-bold text-text-soft">R$</span>
-                                <span className="text-7xl md:text-9xl font-black text-white tracking-tighter leading-none">1,50</span>
-                                <span className="text-2xl font-bold text-text-muted">/ mês</span>
+                                <span className="text-3xl font-semibold text-text-soft">R$</span>
+                                <span className="text-7xl md:text-9xl font-bold text-white tracking-tighter leading-none">1,50</span>
+                                <span className="text-2xl font-semibold text-text-muted">/ mês</span>
                             </div>
                         </div>
 
                         <div className="flex items-center gap-3 p-4 rounded-xl bg-accent/5 border border-accent/20 w-fit">
                             <span className="text-xl">🔒</span>
-                            <p className="text-text-soft font-bold text-sm">
+                            <p className="text-text-soft font-semibold text-sm">
                                 Valor promocional fixo. Sem reajustes depois.
                             </p>
                         </div>
@@ -59,7 +59,7 @@ export const FinalSales = () => {
                         </ul>
 
                         <div className="pt-4">
-                            <button className="w-full py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-black text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
+                            <button className="w-full py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
                                 Quero Garantir Esse Valor
                             </button>
                         </div>

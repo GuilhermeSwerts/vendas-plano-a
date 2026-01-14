@@ -8,10 +8,10 @@ export const WhatIsIt = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div className="space-y-6">
                         <div className="text-center space-y-4">
-                            <h2 className="text-4xl md:text-6xl font-black uppercase italic tracking-tighter">
+                            <h2 className="text-4xl md:text-6xl font-bold uppercase italic tracking-tighter">
                                 O que é o <span className="text-accent underline decoration-4 underline-offset-8">Kompleto?</span>
                             </h2>
-                            <p className="text-text-soft text-xl max-w-2xl mx-auto font-medium">
+                            <p className="text-text-soft text-xl max-w-2xl mx-auto font-normal">
                                 O Kompleto é um clube de soluções para o dia a dia.
                             </p>
                         </div>
@@ -21,18 +21,18 @@ export const WhatIsIt = () => {
 
                         <div className="space-y-4 pt-4">
                             <div className="p-6 rounded-2xl bg-background-navy border border-white/5 space-y-2">
-                                <span className="text-accent font-bold text-sm uppercase tracking-widest">Simples</span>
-                                <p className="text-text-soft font-bold">Assinatura acessível, sem burocracia</p>
+                                <span className="text-accent font-semibold text-sm uppercase tracking-widest">Simples</span>
+                                <p className="text-text-soft font-semibold">Assinatura acessível, sem burocracia</p>
                             </div>
                             <div className="p-6 rounded-2xl bg-white/5 border border-white/5 flex gap-4 items-center">
                                 <div className="flex-1 space-y-1">
-                                    <span className="text-accent font-bold text-sm uppercase tracking-widest">Útil</span>
-                                    <p className="text-text-soft font-bold">Benefícios reais para o dia a dia</p>
+                                    <span className="text-accent font-semibold text-sm uppercase tracking-widest">Útil</span>
+                                    <p className="text-text-soft font-semibold">Benefícios reais para o dia a dia</p>
                                 </div>
                             </div>
                             <div className="p-6 rounded-2xl bg-background-navy border border-white/5 space-y-2">
-                                <span className="text-accent font-bold text-sm uppercase tracking-widest">Sem pegadinhas</span>
-                                <p className="text-text-soft font-bold">Cancelamento simples, sem fidelidade</p>
+                                <span className="text-accent font-semibold text-sm uppercase tracking-widest">Sem pegadinhas</span>
+                                <p className="text-text-soft font-semibold">Cancelamento simples, sem fidelidade</p>
                             </div>
                         </div>
                     </div>

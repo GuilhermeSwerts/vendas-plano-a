@@ -23,24 +23,12 @@
   --font-sans: "Inter", "system-ui", "sans-serif";
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('/inter-font.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-
 :root {
   color-scheme: dark;
 }
 
 body {
-  @apply bg-background-dark text-text-main antialiased overflow-x-hidden;
+  @apply bg-background-dark text-text-main font-sans font-normal antialiased overflow-x-hidden;
   margin: 0;
 }
 
