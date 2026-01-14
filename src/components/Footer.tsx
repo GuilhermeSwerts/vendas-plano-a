@@ -4,15 +4,12 @@ export const Footer = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div className="col-span-1 md:col-span-2 space-y-6">
                     <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center font-bold text-white">
-                            A
-                        </div>
                         <span className="text-xl font-bold tracking-tight">
-                            Vendas<span className="text-primary italic font-black">PlanoA</span>
+                            <img src="/assets/logo-branca.png" className="w-25" alt="" />
                         </span>
                     </div>
                     <p className="text-white/40 max-w-sm leading-relaxed">
-                        Transformando vendedores comuns em especialistas em alta performance. A metodologia definitiva para quem busca o Plano A das vendas.
+                       O clube de soluções para o dia a dia.
                     </p>
                 </div>
 
@@ -28,7 +25,6 @@ export const Footer = () => {
                 <div className="space-y-4">
                     <h4 className="font-bold text-sm uppercase tracking-widest text-primary">Suporte</h4>
                     <ul className="space-y-2 text-sm text-white/50">
-                        <li><a href="#" className="hover:text-white transition-colors">Central de Ajuda</a></li>
                         <li><a href="#" className="hover:text-white transition-colors">Termos de Uso</a></li>
                         <li><a href="#" className="hover:text-white transition-colors">Privacidade</a></li>
                     </ul>
@@ -36,12 +32,7 @@ export const Footer = () => {
             </div>
 
             <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:row items-center justify-between gap-4 text-xs text-white/20">
-                <p>© 2026 Vendas PlanoA. Todos os direitos reservados.</p>
-                <div className="flex gap-6">
-                    <span>Instagram</span>
-                    <span>YouTube</span>
-                    <span>LinkedIn</span>
-                </div>
+                <p>© 2026 Kompleto. Todos os direitos reservados.</p>
             </div>
         </footer>
     );

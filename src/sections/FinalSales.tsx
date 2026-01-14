@@ -21,17 +21,11 @@ export const FinalSales = () => {
                 <div className="glass rounded-[40px] border-white/10 overflow-hidden grid grid-cols-1 lg:grid-cols-2">
                     {/* Left Side: Offer */}
                     <div className="p-12 md:p-16 bg-background-navy/50 flex flex-col justify-center space-y-8 relative">
-                        <div className="absolute top-8 left-8 w-1 h-8 bg-accent" /> {/* Simple accent bar */}
-
                         <div className="space-y-2">
-                            <h3 className="text-2xl font-bold text-accent uppercase tracking-widest">Kompleto Promocional</h3>
-                            <div className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter text-white">
-                                30% OFF
-                            </div>
+                            <h3 className="text-2xl font-bold text-accent uppercase tracking-widest">Kompleto Start</h3>
                         </div>
 
                         <div className="space-y-1">
-                            <p className="text-text-darker text-lg line-through">De R$ 79,90 por</p>
                             <div className="flex items-baseline gap-2">
                                 <span className="text-3xl font-bold text-text-soft">R$</span>
                                 <span className="text-7xl md:text-9xl font-black text-white tracking-tighter leading-none">1,50</span>
@@ -57,7 +51,7 @@ export const FinalSales = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <p className="text-text-soft font-medium leading-tight">
+                                    <p className="text-text-soft font-3xl leading-tight">
                                         {benefit}
                                     </p>
                                 </li>

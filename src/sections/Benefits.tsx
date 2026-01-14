@@ -16,8 +16,8 @@ export const Benefits = () => {
         <section id="beneficios" className="py-24 px-6 bg-background-dark">
             <div className="max-w-6xl mx-auto space-y-16">
                 <div className="space-y-6">
-                    <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter">
-                        Você terá <span className="text-accent underline decoration-2 underline-offset-4">acesso a:</span>
+                    <h2 className="mb-10    text-4xl md:text-5xl font-black uppercase italic tracking-tighter">
+                        Você terá <span className="text-accent decoration-2">acesso a:</span>
                     </h2>
 
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -33,7 +33,7 @@ export const Benefits = () => {
                 </div>
 
                 <div className="space-y-8">
-                    <p className="text-center text-text-soft text-xl font-black uppercase tracking-widest">
+                    <p className="text-center text-text-soft text-3xl font-black uppercase tracking-widest">
                         Economize todos os dias com as marcas que você já ama.
                     </p>
 
@@ -57,7 +57,11 @@ export const Benefits = () => {
                     </div>
                 </div>
 
-                <div className="pt-12 text-center">
+                <p className="text-center text-text-soft text-3xl font-black uppercase tracking-widest">
+                    Economize todos os dias com as marcas que você já ama.
+                </p>
+
+                <div className="pt-5 text-center">
                     <button className="w-full max-w-md py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-black text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
                         Quero Aproveitar
                     </button>

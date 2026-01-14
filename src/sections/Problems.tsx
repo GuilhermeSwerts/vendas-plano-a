@@ -8,18 +8,17 @@ export const Problems = () => {
 
                 <div className="space-y-6 text-xl md:text-3xl font-bold text-text-soft leading-tight">
                     <p>Você não gasta com uma coisa só.</p>
-                    <p className="text-text-muted">É um pouco aqui, outro ali.</p>
                     <p>Um almoço fora, um serviço, um lazer, uma compra inesperada.</p>
                 </div>
 
-                <div className="space-y-4 pt-8 border-t border-white/10 max-w-2xl mx-auto">
-                    <p className="text-text-muted italic">
-                        "Quando você percebe, o dinheiro já foi. E sobra aquela sensação de aperto — mesmo sem ter feito nada 'errado'."
+                <div className="space-y-4 pt-8 border-t border-white/10 max-w-2xl mx-auto text-xl md:text-3xl">
+                    <p
+                        className="text-transparent bg-clip-text bg-gradient-to-b from-accent to-[#FF6B00]">
+                        Quando você percebe, o dinheiro já foi. E sobra aquela sensação de aperto — mesmo sem ter feito nada "errado".
                     </p>
                 </div>
 
                 <div className="glass p-10 rounded-3xl space-y-8 text-left border-accent/20">
-                    <h4 className="text-accent font-black tracking-widest uppercase text-sm">Frase de impacto:</h4>
                     <ul className="space-y-6">
                         <li className="flex gap-4">
                             <span className="text-3xl">👉</span>
@@ -32,7 +31,7 @@ export const Problems = () => {
                     </ul>
                     <div className="pt-6">
                         <button className="w-full py-5 bg-cta-primary hover:bg-cta-hover text-background-dark font-black text-xl rounded-2xl transition-all uppercase tracking-tighter">
-                            Quero Aproveitar
+                            Quero concorrer a 5 mil e ter acesso ao Clube de Vantagens
                         </button>
                     </div>
                 </div>

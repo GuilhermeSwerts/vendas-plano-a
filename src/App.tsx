@@ -9,7 +9,7 @@ import { FinalSales } from './sections/FinalSales'
 
 function App() {
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen">
       <Header />
       <main>
         <Hero />
