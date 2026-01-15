@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export const Hero = () => {
+    const navigate = useNavigate();
+
     return (
         <section id="hero" className="relative min-h-[95vh] flex items-center justify-center pt-24 overflow-hidden bg-radial-[at_center_center] from-background-gradient to-background-dark">
             {/* Background Elements */}
@@ -26,7 +30,7 @@ export const Hero = () => {
                         Por apenas <span className="text-accent font-semibold">R$ 1,50/mês</span>, participe de sorteios mensais e tenha acesso a descontos em lojas, serviços, lazer, bem estar, saúde e alimentação.
                     </p>
                 </div>
-                <button className="w-full max-w-md py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
+                <button onClick={() => navigate('/register')} className="w-full max-w-md py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
                     Quero Participar Agora
                 </button>
 

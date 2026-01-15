@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 export const Header = () => {
+    const navigate = useNavigate()
+    const currentPath = window.location.pathname;
+
     return (
         <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
             <nav className="max-w-7xl mx-auto flex items-center justify-between glass px-6 py-3 rounded-full border-white/5">
@@ -8,13 +13,16 @@ export const Header = () => {
                     </span>
                 </div>
 
-                <div className="hidden md:flex items-center gap-8 text-sm font-normal text-text-muted">
+                {currentPath == "/" && <div className="hidden md:flex items-center gap-8 text-sm font-normal text-text-muted">
                     <a href="#hero" className="hover:text-white transition-colors">Início</a>
                     <a href="#oque-e" className="hover:text-white transition-colors">O que é</a>
                     <a href="#problema" className="hover:text-white transition-colors">Dificuldades</a>
                     <a href="#beneficios" className="hover:text-white transition-colors">Benefícios</a>
                     <a href="#oferta" className="hover:text-white transition-colors">Oferta</a>
-                </div>
+                </div>}
+                {currentPath != "/" && <div className="hidden md:flex items-center gap-8 text-sm font-normal text-text-muted">
+                    <button onClick={() => navigate('/')} className="hover:text-white transition-colors">Início</button>
+                </div>}
 
                 <a href="https://kompleto.app.br/Account/LoginClientes" target="_blank " className="bg-cta-primary hover:bg-cta-hover text-background-dark px-6 py-2 rounded-full text-sm font-bold transition-all shadow-lg hover:shadow-cta-primary/20 hover:scale-105 active:scale-95 uppercase tracking-tighter">
                     Entrar

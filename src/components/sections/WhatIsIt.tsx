@@ -1,4 +1,5 @@
 export const WhatIsIt = () => {
+
     return (
         <section id="oque-e" className="py-24 px-6 bg-[#010218] relative overflow-hidden">
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-accent/5 rounded-full blur-[100px] -z-10" />

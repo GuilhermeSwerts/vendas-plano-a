@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export const Problems = () => {
+    const navigate = useNavigate();
+
     return (
         <section id="problema" className="py-24 px-6 bg-background-navy relative border-y border-white/5">
             <div className="max-w-4xl mx-auto text-center space-y-12">
@@ -30,7 +34,7 @@ export const Problems = () => {
                         </li>
                     </ul>
                     <div className="pt-6">
-                        <button className="w-full py-5 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-xl rounded-2xl transition-all uppercase tracking-tighter">
+                        <button onClick={() => navigate('/register')} className="w-full py-5 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-xl rounded-2xl transition-all uppercase tracking-tighter">
                             Quero concorrer a 5 mil e ter acesso ao Clube de Vantagens
                         </button>
                     </div>

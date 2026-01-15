@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export const Benefits = () => {
+    const navigate = useNavigate();
+
     const benefits = [
         { icon: "🎯", text: "Participação mensal em sorteio de ", bold: "R$ 5.000" },
         { icon: "🛍️", text: "Acesso ao Clube de Vantagens", bold: "" },
@@ -50,7 +54,7 @@ export const Benefits = () => {
                             </div>
                         ))}
                     </div>
-{/* 
+                    {/* 
                     <div className="flex justify-center gap-4 text-accent">
                         <button className="w-10 h-10 rounded-full border border-accent/30 flex items-center justify-center hover:bg-accent/10">←</button>
                         <button className="w-10 h-10 rounded-full border border-accent/30 flex items-center justify-center hover:bg-accent/10">→</button>
@@ -62,7 +66,7 @@ export const Benefits = () => {
                 </p>
 
                 <div className="pt-5 text-center">
-                    <button className="w-full max-w-md py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
+                    <button onClick={() => navigate('/register')} className="w-full max-w-md py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
                         Quero Aproveitar
                     </button>
                 </div>

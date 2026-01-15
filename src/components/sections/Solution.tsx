@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export const Solution = () => {
+    const navigate = useNavigate();
+
     return (
         <section id="oque-e" className="bg-[#010218] relative overflow-hidden">
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-accent/5 rounded-full blur-[100px] -z-10" />
@@ -16,7 +20,7 @@ export const Solution = () => {
                         </p>
 
                         <div className="pt-6 flex items-center justify-center">
-                            <button className="px-12 py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_40px_rgba(250,204,21,0.2)] hover:scale-105 active:scale-95 uppercase tracking-tighter">
+                            <button onClick={() => navigate('/register')} className="px-12 py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_40px_rgba(250,204,21,0.2)] hover:scale-105 active:scale-95 uppercase tracking-tighter">
                                 Quero Aproveitar
                             </button>
                         </div>

@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export const FinalSales = () => {
+    const navigate = useNavigate();
+
     const finalBenefits = [
         "Acesso a descontos exclusivos a centenas de lojas",
         "Acesso a descontos exclusivos em restaurantes",
@@ -59,7 +63,7 @@ export const FinalSales = () => {
                         </ul>
 
                         <div className="pt-4">
-                            <button className="w-full py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
+                            <button onClick={() => navigate('/register')} className="w-full py-6 bg-cta-primary hover:bg-cta-hover text-background-dark font-bold text-2xl rounded-2xl transition-all shadow-[0_20px_50px_rgba(250,204,21,0.3)] hover:scale-[1.02] active:scale-95 uppercase tracking-tighter">
                                 Quero Garantir Esse Valor
                             </button>
                         </div>
