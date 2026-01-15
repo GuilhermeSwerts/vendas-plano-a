@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEye, FaEyeSlash, FaSearch } from 'react-icons/fa';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import type { IconType } from "react-icons";
 
 export type InputTypes = [
