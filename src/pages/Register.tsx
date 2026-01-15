@@ -1,10 +1,10 @@
 import { FaCalendar, FaPhone, FaUser } from "react-icons/fa"
-import { Header } from "../components/Header"
 import { InputIcon } from "../components/ui/Input"
 import { MdAlternateEmail } from "react-icons/md"
 import { HiIdentification } from "react-icons/hi"
 import { useRegister } from "../hook/useRegister"
 import { maskPhone } from "../util/mask"
+import { IoReturnUpBackOutline } from "react-icons/io5"
 
 const Register = () => {
 
@@ -12,14 +12,15 @@ const Register = () => {
         errors,
         form,
         handleChange,
-        handleSubmit
+        handleSubmit,
+        navigate
     } = useRegister();
 
     return (
         <div className="h-screen">
-            <Header />
             <main className="flex items-center justify-center h-full">
                 <div className="glass mt-0 md:mt-15 p-10 rounded-3xl space-y-8 text-left border-accent/20">
+                    <button onClick={() => navigate('/')}>Voltar <IoReturnUpBackOutline /></button>
                     <div>
                         <h3 className="text-center text-1xl md:text-2xl">Comece agora a economizar no dia a dia com a Kompleto.</h3>
                         <h4 className="text-center">Você já concorre a <span className="text-transparent bg-clip-text bg-gradient-to-b from-accent to-[#FF6B00]">R$5000,00 ainda esse mês</span></h4>
