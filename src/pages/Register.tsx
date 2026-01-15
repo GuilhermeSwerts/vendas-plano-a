@@ -4,7 +4,7 @@ import { InputIcon } from "../components/ui/Input"
 import { MdAlternateEmail } from "react-icons/md"
 import { HiIdentification } from "react-icons/hi"
 import { useRegister } from "../hook/useRegister"
-import { maskCpf, maskPhone } from "../util/mask"
+import { maskPhone } from "../util/mask"
 
 const Register = () => {
 

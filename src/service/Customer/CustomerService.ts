@@ -3,7 +3,7 @@ import type { ICustomer } from "../../interfaces/ICustomer";
 import { api } from "../api";
 
 export const onPostSendNewCustomer = (customer: ICustomer, onCallback: () => void) => {
-    api.post('Customer', customer, async () => {
+    api.post<boolean>('Customer', customer, async () => {
         await Swal.fire({
             title: 'Formulário enviado com sucesso!',
             html: `
