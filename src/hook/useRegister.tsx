@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import type { ICustomer } from "../interfaces/ICustomer";
 import { PatternEnum } from "../model/enums/PatternEnum";
 import { onPostSendNewCustomer } from "../service/Customer/CustomerService";
 import { useGenericFormValidator, type ValidationRulesType } from "./useGenericFormValidator"
 
 export const useRegister = () => {
+    const navigate = useNavigate();
 
     const validationRules: { [key: string]: ValidationRulesType } = {
         cpf: {
@@ -53,6 +55,7 @@ export const useRegister = () => {
         handleChange,
         errors,
         form,
-        handleSubmit
+        handleSubmit,
+        navigate
     }
 }
